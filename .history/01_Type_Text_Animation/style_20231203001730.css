@@ -34,7 +34,7 @@ body {
     background-color: #000;
     border-left: 2px solid #fff;
     right: -8px;
-    animation: cursor .8s infinite, typing 18s steps(14) infinite;
+    animation: cursor .8s infinite, typing 18s steps(16) infinite;
 }
 
 @keyframes cursor {

@@ -29,12 +29,12 @@ body {
 .animated-text span::after {
     content: "";
     position: absolute;
-    width: calc(100% + 10px);
+    width: calc(100% + 8px);
     height: 100%;
     background-color: #000;
     border-left: 2px solid #fff;
     right: -8px;
-    animation: cursor .8s infinite, typing 18s steps(14) infinite;
+    animation: cursor .8s infinite, typing 25s steps(10) infinite;
 }
 
 @keyframes cursor {
@@ -62,7 +62,7 @@ body {
 }
 
 @keyframes typing {
-    10%,20%,30%,40%,50%,60%,70%,80%,90%,100%{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
         width: 0;
     }
     5%,10%,25%,30%,45%,50%,65%,70%,85%,90%{
