@@ -21,7 +21,7 @@ body {
 }
 
 .animated-text span::before {
-    content: "Programmer";
+    content: "Photographer";
     color: rgb(11, 139, 243);
     animation: words 20s infinite;
 }
@@ -29,12 +29,12 @@ body {
 .animated-text span::after {
     content: "";
     position: absolute;
-    width: calc(100% + 10px);
+    width: calc(100% + 8px);
     height: 100%;
     background-color: #000;
     border-left: 2px solid #fff;
     right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    animation: cursor .8s infinite, typing 18s steps(18() infinite;
 }
 
 @keyframes cursor {
@@ -44,20 +44,20 @@ body {
 } 
 
 @keyframes words {
-    0%,20%{
+    0%, 20%{
         content: "Photographer"
     }
-    21%,40%{
-        content: "Programmer"
+    21%, 40%{
+        content: "Driver"
     }
-    41%,60%{
+    41%, 60%{
         content: "Developer"
     }
-    61%,80%{
+    61%, 80%{
         content: "Designer"
     }
     81%, 100%{
-        content: "Driver"
+        content: "Programmer"
     }
 }
 
@@ -66,6 +66,6 @@ body {
         width: 0;
     }
     5%,10%,25%,30%,45%,50%,65%,70%,85%,90%{
-        width: calc(100% + 10px);
+        width: calc(100% + 8px);
     }
 }

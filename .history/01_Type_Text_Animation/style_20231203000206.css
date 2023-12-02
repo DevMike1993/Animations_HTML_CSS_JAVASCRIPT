@@ -23,7 +23,7 @@ body {
 .animated-text span::before {
     content: "Programmer";
     color: rgb(11, 139, 243);
-    animation: words 20s infinite;
+    animation: words 30s infinite;
 }
 
 .animated-text span::after {
