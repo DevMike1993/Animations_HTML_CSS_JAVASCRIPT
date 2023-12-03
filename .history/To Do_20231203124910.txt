@@ -1,0 +1,4 @@
+Co poprawić: 
+
+- Dodać miganie kursora 
+- Poprawić by przy krótszych słowach nie uciekał tak daleko. 
