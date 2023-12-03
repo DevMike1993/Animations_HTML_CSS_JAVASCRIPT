@@ -1,0 +1,101 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background: #000;
+    color: rgb(11, 139, 243);
+    display: flex;
+    align-items: center;
+    font-size-adjust: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    cursor: none;
+}
+
+.cursor-blink {
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: white;
+    animation
+}
+
+.text-box {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+}
+
+.fixed-text {
+    display: inline-block;
+    color: #fff;
+    vertical-align: top;
+}
+
+.animated-text {
+    display: inline-block;
+    height: 113px;
+    overflow: hidden;
+}
+
+.animated-text div{
+    animation: 9s wordChange;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+.animated-text span {
+    position: relative;
+    color: rgb(11, 139, 243);
+    display: block;
+    text-align: left;
+}
+
+.animated-text span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid white;
+    right: -2px;
+    background-color: #000;
+    animation: 3s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(14, end);
+    animation-fill-mode: backwards;
+} 
+
+@keyframes textType {
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+@keyframes wordChange {
+    0%{
+        margin-top: 0;
+    }
+    33.333%{
+        margin-top: -113px;
+    }
+    66.666%{
+        margin-top: -226px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
