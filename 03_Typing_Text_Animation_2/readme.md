@@ -1,0 +1,3 @@
+Based on this video WebKitCoding  https://www.youtube.com/watch?v=fSUG62kxJlw
+
+Used script for typing animation: https://github.com/mattboldt/typed.js
